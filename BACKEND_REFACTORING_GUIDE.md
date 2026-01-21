@@ -277,16 +277,16 @@ public ResponseEntity<ApiResponse<Void>> signUp(@RequestBody @Valid MemberSignUp
 **Before (위험)**:
 ```yaml
 jwt:
-  secret: H7oIaBujRo6fA/a0wdk09iY6STECQZbemMj8bcs5xBMzd0IYxzT+hNQd+fgXvsyz3qHF3DIwuYXUE9m7w5tkDw==
+  secret: [EXPOSED_SECRET_REMOVED]
 
 naver:
   client:
-    id: jZ8qrYWQZsYsih0mCXjZ
-    secret: EtAAgiCzjz
+    id: [EXPOSED_ID_REMOVED]
+    secret: [EXPOSED_SECRET_REMOVED]
 
 spring:
   datasource:
-    password: dlwlsltks
+    password: [EXPOSED_PASSWORD_REMOVED]
 ```
 
 **After (안전)**:
